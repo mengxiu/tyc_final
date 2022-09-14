@@ -57,7 +57,7 @@ def get_name_and_tycid_by_network(id:str)->dict:
 
 major_list=get_name_and_tycid(list(pd.read_excel(major_excel_name, usecols=[major_colums_name],sheet_name=major_excel_sheet)[major_colums_name]))
 target_list=get_name_and_tycid(list(pd.read_excel(target_excel_name, usecols=[target_colums_name],sheet_name=target_excel_sheet)[target_colums_name]))
-
+print('')
 with open('result/tyc_info.json', 'w', encoding='utf-8')as f:
     f.write(json.dumps(tyc_info_dict))
 

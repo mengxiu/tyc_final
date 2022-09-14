@@ -1,0 +1,6 @@
+lxml==4.9.1
+openpyxl==3.0.10
+pandas
+requests
+urllib3
+xlrd
